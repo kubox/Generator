@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ad89a5658b4bc60c66d9bea51315c56d",
-    "content-hash": "488cf503202d1cabe55c8f1314a10b9f",
+    "hash": "7fc2ae4f2243d31557b0eb59c8833733",
+    "content-hash": "717f678a4947b1407ff0e3228cf23b8a",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -776,6 +776,64 @@
             "time": "2015-12-07 04:07:13"
         },
         {
+            "name": "filp/whoops",
+            "version": "1.1.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filp/whoops.git",
+                "reference": "72538eeb70bbfb11964412a3d098d109efd012f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/72538eeb70bbfb11964412a3d098d109efd012f7",
+                "reference": "72538eeb70bbfb11964412a3d098d109efd012f7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Whoops": "src/"
+                },
+                "classmap": [
+                    "src/deprecated"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Filipe Dobreira",
+                    "homepage": "https://github.com/filp",
+                    "role": "Developer"
+                }
+            ],
+            "description": "php error handling for cool kids",
+            "homepage": "https://github.com/filp/whoops",
+            "keywords": [
+                "error",
+                "exception",
+                "handling",
+                "library",
+                "silex-provider",
+                "whoops",
+                "zf2"
+            ],
+            "time": "2015-06-29 05:42:04"
+        },
+        {
             "name": "infyomlabs/core-templates",
             "version": "dev-master",
             "source": {
@@ -824,12 +882,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/InfyOmLabs/laravel-generator.git",
-                "reference": "91a1882baa06611b76903ea6669e369773929bb5"
+                "reference": "4044c8c3e6c1b5541244b7117b0f7677ca7702bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/InfyOmLabs/laravel-generator/zipball/91a1882baa06611b76903ea6669e369773929bb5",
-                "reference": "91a1882baa06611b76903ea6669e369773929bb5",
+                "url": "https://api.github.com/repos/InfyOmLabs/laravel-generator/zipball/4044c8c3e6c1b5541244b7117b0f7677ca7702bb",
+                "reference": "4044c8c3e6c1b5541244b7117b0f7677ca7702bb",
                 "shasum": ""
             },
             "require": {
@@ -871,7 +929,7 @@
                 "test",
                 "view"
             ],
-            "time": "2016-06-13 08:29:55"
+            "time": "2016-06-18 07:47:17"
         },
         {
             "name": "infyomlabs/swagger-generator",
@@ -1144,17 +1202,69 @@
             "time": "2016-03-14 15:55:34"
         },
         {
-            "name": "laravel/framework",
-            "version": "v5.1.39",
+            "name": "laravel-ja/comja5",
+            "version": "1.0.15",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laravel/framework.git",
-                "reference": "cb6c650cbb25c27fa9a4eddd07c6a78dd87554ea"
+                "url": "https://github.com/laravel-ja/comja5.git",
+                "reference": "807481dbee96c02b2f2b6b89f4b206ef4b67b7f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/cb6c650cbb25c27fa9a4eddd07c6a78dd87554ea",
-                "reference": "cb6c650cbb25c27fa9a4eddd07c6a78dd87554ea",
+                "url": "https://api.github.com/repos/laravel-ja/comja5/zipball/807481dbee96c02b2f2b6b89f4b206ef4b67b7f8",
+                "reference": "807481dbee96c02b2f2b6b89f4b206ef4b67b7f8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "mockery/mockery": "dev-master",
+                "phpunit/phpunit": "4.5.0"
+            },
+            "bin": [
+                "bin/comja5"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Comja\\": "Comja/"
+                },
+                "files": [
+                    "helper.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hirohisa Kawase",
+                    "email": "hiro.soft@gmail.com",
+                    "role": "developer"
+                }
+            ],
+            "description": "Translate comments in laravel/laravel 5.* project to Japanese",
+            "keywords": [
+                "japanese",
+                "laravel",
+                "resource"
+            ],
+            "time": "2015-12-22 00:02:31"
+        },
+        {
+            "name": "laravel/framework",
+            "version": "v5.1.40",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/framework.git",
+                "reference": "555269ee07cfe4e966ad16b394c89fa0b586d8b0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/555269ee07cfe4e966ad16b394c89fa0b586d8b0",
+                "reference": "555269ee07cfe4e966ad16b394c89fa0b586d8b0",
                 "shasum": ""
             },
             "require": {
@@ -1270,7 +1380,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-06-14 01:20:12"
+            "time": "2016-06-17 19:23:17"
         },
         {
             "name": "laravelcollective/html",
@@ -2160,7 +2270,7 @@
         },
         {
             "name": "symfony/class-loader",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/class-loader.git",
@@ -3192,16 +3302,16 @@
         },
         {
             "name": "yajra/laravel-datatables-oracle",
-            "version": "v6.11.5",
+            "version": "v6.11.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yajra/laravel-datatables.git",
-                "reference": "6e0959285d7bbe4e6161aa8db68e3a9ef69bc943"
+                "reference": "6d9a36aa921ffc703e722a0f34d2dc56112562c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/6e0959285d7bbe4e6161aa8db68e3a9ef69bc943",
-                "reference": "6e0959285d7bbe4e6161aa8db68e3a9ef69bc943",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/6d9a36aa921ffc703e722a0f34d2dc56112562c6",
+                "reference": "6d9a36aa921ffc703e722a0f34d2dc56112562c6",
                 "shasum": ""
             },
             "require": {
@@ -3245,7 +3355,7 @@
                 "laravel4",
                 "laravel5"
             ],
-            "time": "2016-06-01 00:33:55"
+            "time": "2016-06-18 11:40:02"
         },
         {
             "name": "zircote/swagger-php",
@@ -4381,16 +4491,16 @@
         },
         {
             "name": "sebastian/exporter",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "7ae5513327cb536431847bcc0c10edba2701064e"
+                "reference": "42c4c2eec485ee3e159ec9884f95b431287edde4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/7ae5513327cb536431847bcc0c10edba2701064e",
-                "reference": "7ae5513327cb536431847bcc0c10edba2701064e",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/42c4c2eec485ee3e159ec9884f95b431287edde4",
+                "reference": "42c4c2eec485ee3e159ec9884f95b431287edde4",
                 "shasum": ""
             },
             "require": {
@@ -4398,12 +4508,13 @@
                 "sebastian/recursion-context": "~1.0"
             },
             "require-dev": {
+                "ext-mbstring": "*",
                 "phpunit/phpunit": "~4.4"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2.x-dev"
+                    "dev-master": "1.3.x-dev"
                 }
             },
             "autoload": {
@@ -4443,7 +4554,7 @@
                 "export",
                 "exporter"
             ],
-            "time": "2015-06-21 07:55:53"
+            "time": "2016-06-17 09:04:28"
         },
         {
             "name": "sebastian/global-state",
@@ -4586,16 +4697,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "eca51b7b65eb9be6af88ad7cc91685f1556f5c9a"
+                "reference": "c5a7e7fc273c758b92b85dcb9c46149ccda89623"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/eca51b7b65eb9be6af88ad7cc91685f1556f5c9a",
-                "reference": "eca51b7b65eb9be6af88ad7cc91685f1556f5c9a",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/c5a7e7fc273c758b92b85dcb9c46149ccda89623",
+                "reference": "c5a7e7fc273c758b92b85dcb9c46149ccda89623",
                 "shasum": ""
             },
             "require": {
@@ -4631,7 +4742,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-05-26 21:46:24"
+            "time": "2016-06-14 11:18:07"
         },
         {
             "name": "webmozart/assert",

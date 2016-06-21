@@ -14,7 +14,9 @@
         "infyomlabs/swagger-generator": "dev-master",
         "jlapp/swaggervel": "dev-master",
         "doctrine/dbal": "~2.3",
-        "infyomlabs/core-templates": "dev-master"
+        "infyomlabs/core-templates": "dev-master",
+        "laravel-ja/comja5": "~1",
+        "filp/whoops": "~1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
