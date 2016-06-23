@@ -58,7 +58,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    InfyOm Generator
+                    @yield('title', config('viewtemplate.title'))
                 </a>
             </div>
 
@@ -72,8 +72,8 @@
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
                     @if (Auth::guest())
-                        <li><a href="{{ url('/login') }}">Login</a></li>
-                        <li><a href="{{ url('/register') }}">Register</a></li>
+                        <li><a href="{{ url('/login') }}">ログイン</a></li>
+                        <li><a href="{{ url('/register') }}">新規登録</a></li>
                     @endif
                 </ul>
             </div>
@@ -90,12 +90,13 @@
                class="btn btn-default" id="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
 
             @if (!Auth::guest())
-                <span class="pull-right" style="margin-right: 10px;margin-top: 15px"><a href="{{ url('/logout') }}"><i
-                                class="fa fa-btn fa-sign-out"></i>Logout</a></span>
+                <span class="pull-right" style="margin-right: 10px;margin-top: 15px"><a href="{{ url('/logout') }}">
+                    <i class="fa fa-btn fa-sign-out"></i><span style="margin-left:10px">ログアウト</span></a>
+                </span>
             @endif
         </header>
     </div>
-    @endif
+@endif
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
