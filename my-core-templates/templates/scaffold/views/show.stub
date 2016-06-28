@@ -1,0 +1,16 @@
+@extends('layouts.app')
+
+@section('content')
+    <table class="table table-responsive">
+        <thead>
+            <th colspan="2">Show ID</th>
+        </thead>
+        <tbody>
+            @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.show_fields')
+        </tbody>
+    </table>
+
+    <div class="form-group">
+           <a href="{!! route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index') !!}" class="btn btn-default col-md-3">戻る</a>
+    </div>
+@endsection
