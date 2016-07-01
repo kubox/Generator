@@ -64,9 +64,11 @@
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
+                {{--
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/home') }}">Home</a></li>
                 </ul>
+                --}}
 
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
@@ -85,10 +87,11 @@
             @include('layouts.sidebar')
         <!-- /#sidebar-wrapper -->
         <header class="header">
+            <!--
             <a href="#menu-toggle"
                style="margin-top: 8px;margin-left: 5px;background-color: #E7E7E7;border-color: #E7E7E7"
                class="btn btn-default" id="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
-
+            -->
             @if (!Auth::guest())
                 <span class="pull-right" style="margin-right: 10px;margin-top: 15px"><a href="{{ url('/logout') }}">
                     <i class="fa fa-btn fa-sign-out"></i><span style="margin-left:10px">ログアウト</span></a>
@@ -96,7 +99,7 @@
             @endif
         </header>
     </div>
-@endif
+    @endif
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
@@ -104,7 +107,12 @@
         <div class="container-fluid">
 
             <div class="row">
+            @if (!Auth::guest())
+                <div class="col-md-9 col-md-offset-3">
+            @else
+                <!-- LoginFrom -->
                 <div class="col-lg-12">
+            @endif
                     @yield('content')
                 </div>
             </div>
