@@ -109,12 +109,14 @@
             <div class="row">
             @if (!Auth::guest())
                 <div class="col-md-9 col-md-offset-3">
-            @else
-                <!-- LoginFrom -->
-                <div class="col-lg-12">
-            @endif
                     @yield('content')
                 </div>
+                <!-- LoginFrom -->
+                @else
+                <div class="col-lg-12">
+                    @yield('content')
+                </div>
+            @endif
             </div>
         </div>
     </div>
@@ -136,6 +138,22 @@
         $("#menu-toggle").click(function (e) {
             e.preventDefault();
             $("#wrapper").toggleClass("toggled");
+        });
+
+        $('#collapse_icon').click(function () {
+            $('#collapseOne').collapse('toggle');
+            $('#collapseTwo').collapse('toggle');
+            $('#collapse3rd').collapse('toggle');
+        });
+
+        $('#tglcollapseOne').click(function () {
+            $('#collapseOne').collapse('toggle');
+        });
+        $('#tglcollapseTwo').click(function () {
+            $('#collapseTwo').collapse('toggle');
+        });
+        $('#tglcollapse3rd').click(function () {
+            $('#collapse3rd').collapse('toggle');
         });
 
     </script>
